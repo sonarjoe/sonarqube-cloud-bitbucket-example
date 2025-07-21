@@ -30,7 +30,7 @@ definitions:
               SONAR_TOKEN: ${SONAR_TOKEN}
               # Optional variables:
               # SONAR_SCANNER_OPTS: -Xmx512m
-              # DEBUG: "true"
+              DEBUG: "true"
 
 pipelines:
   branches:
