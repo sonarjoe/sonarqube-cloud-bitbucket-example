@@ -32,6 +32,14 @@ definitions:
               # SONAR_SCANNER_OPTS: -Xmx512m
               DEBUG: "true"
 
+    - step: &sonarqube-quality-gate
+        name: Check Quality Gate on SonarQube
+        max-time: 5 # value you should use depends on the analysis time for your project
+        script:
+          - pipe: sonarsource/sonarqube-quality-gate:1.2.1
+            variables:
+              SONAR_TOKEN: ${SONAR_TOKEN}
+
 pipelines:
   branches:
     main:
@@ -42,3 +50,4 @@ pipelines:
     '**':
       - step: *run-tests
       - step: *sonarqube-analysis
+      - step: *sonarqube-quality-gate
