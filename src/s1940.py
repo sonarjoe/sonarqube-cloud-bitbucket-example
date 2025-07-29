@@ -37,3 +37,27 @@ def fun(d):
   i = 10
   return i + d      # Noncompliant
   i += 1             # this is never executed
+
+
+### This file is part of the SonarQube example project for Bitbucket Pipelines.
+def fun1(b):
+  i = 10
+  return i + b       # Noncompliant
+  i += 1             # this is never executed
+
+def fun2(c):
+  i = 10
+  return i + c       # Noncompliant
+  i += 1             # this is never executed
+
+def is_not_empty2(value):
+    if not value:
+        return False
+    else:
+        return True
+    
+def is_not_empty3(value):
+    if not value:
+        return False
+    else:
+        return True
