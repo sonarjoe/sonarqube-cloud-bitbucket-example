@@ -1,7 +1,6 @@
 ## Overview
 
 This project is an example of using Bitbucket pipelines for a python project. It demonstrates how to set up a CI/CD pipeline for a Python application.  
-We have multiple CI/CD Pipeline examples, one for running the SonarScanner and sending the results to SonarQube Server and the other for sending the results to SonarQube Cloud.  
 
 PLEASE READ OUR SONARQUBE DOCUMENTATION FOR WORKING WITH BITBUCKET PIPELINES  
 [Bitbucket Cloud - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-cloud-integration/)  
