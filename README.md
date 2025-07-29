@@ -3,12 +3,12 @@
 This project is an example of using Bitbucket pipelines for a python project. It demonstrates how to set up a CI/CD pipeline for a Python application.  
 We have multiple CI/CD Pipeline examples, one for running the SonarScanner and sending the results to SonarQube Server and the other for sending the results to SonarQube Cloud.  
 
-PLEASE READ OUR SONARQUBE DOCUMENTATION FOR WORKING WITH AZURE DEVOPS PIPELINES  
+PLEASE READ OUR SONARQUBE DOCUMENTATION FOR WORKING WITH BITBUCKET PIPELINES  
 [Bitbucket Cloud - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-cloud-integration/)  
 [Bitbucket Server and Bitbucket Data Center - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-server-integration/)  
 [Bitbucket Pipelines - SonarQube Cloud](https://docs.sonarsource.com/sonarqube-cloud/advanced-setup/ci-based-analysis/bitbucket-pipelines-for-sonarcloud/)
 
-## Important Information in Pipelines (NEED TO CHANGE)
+## Important Information in Pipelines 
 - The pipeline is configured to run only under the following conditions:  
   - When the branch is `main`.  
   - When the pipeline is triggered by a pull request event.  
@@ -17,7 +17,7 @@ PLEASE READ OUR SONARQUBE DOCUMENTATION FOR WORKING WITH AZURE DEVOPS PIPELINES
 - For more information on how to limit your analysis scope and parameters available, please check **SonarScanner Analysis Scope** and **SonarScanner Analysis Parameters** in the Important Links section.
 
 
-## Important Links (NEED TO CHANGE)
+## Important Links 
 [Bitbucket Cloud - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-cloud-integration/)  
 [Bitbucket Server and Bitbucket Data Center - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-server-integration/)  
 [Bitbucket Pipelines - SonarQube Cloud](https://docs.sonarsource.com/sonarqube-cloud/advanced-setup/ci-based-analysis/bitbucket-pipelines-for-sonarcloud/)  
