@@ -24,19 +24,18 @@ definitions:
           - sonar
         script:
           # Download and install SonarQube Scanner
-          - pipe: sonarsource/sonarqube-scan:4.0.0
+          - pipe: sonarsource/sonarcloud-scan:4.1.0
             variables:
               SONAR_HOST_URL: ${SONAR_HOST_URL}
               SONAR_TOKEN: ${SONAR_TOKEN}
-              # Optional variables:
-              # SONAR_SCANNER_OPTS: -Xmx512m
+              EXTRA_ARGS: ["-Dsonar.organization=sonarqube-workspace-example"]
               DEBUG: "true"
 
     - step: &sonarqube-quality-gate
         name: Check Quality Gate on SonarQube
         max-time: 5 # value you should use depends on the analysis time for your project
         script:
-          - pipe: sonarsource/sonarqube-quality-gate:1.2.1
+          - pipe: ssonarsource/sonarcloud-quality-gate:0.2.0
             variables:
               SONAR_TOKEN: ${SONAR_TOKEN}
 
