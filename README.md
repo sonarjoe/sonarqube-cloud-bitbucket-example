@@ -39,7 +39,7 @@ Example
         name: Check Quality Gate on SonarQube
         max-time: 5 
         script:
-          - pipe: sonarsource/sonarqube-quality-gate:1.2.1
+          - pipe: sonarsource/sonarcloud-quality-gate:0.2.0
             variables:
               SONAR_TOKEN: ${SONAR_TOKEN}
 ```
@@ -53,10 +53,10 @@ Example
         name: SonarQube analysis
         caches:
           - sonar
-        script:
-          - pipe: sonarsource/sonarqube-scan:4.0.0
-            variables:
-              SONAR_HOST_URL: ${SONAR_HOST_URL}
-              SONAR_TOKEN: ${SONAR_TOKEN}
-              SONAR_EXTRA_PARAMS: "-Dsonar.qualitygate.wait=true -Dsonar.qualitygate.timeout=300" 
+      - pipe: sonarsource/sonarcloud-scan:4.1.0
+          variables:
+             SONAR_HOST_URL: ${SONAR_HOST_URL}
+             SONAR_TOKEN: ${SONAR_TOKEN}
+             EXTRA_ARGS: ["-Dsonar.organization=sonarqube-workspace-example -Dsonar.qualitygate.wait=true -Dsonar.qualitygate.timeout=300"]
+             DEBUG: "true"
 ```
