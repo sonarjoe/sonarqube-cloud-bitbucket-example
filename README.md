@@ -7,6 +7,7 @@ PLEASE READ OUR SONARQUBE DOCUMENTATION FOR WORKING WITH BITBUCKET PIPELINES
 [Bitbucket Server and Bitbucket Data Center - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-server-integration/)  
 [Bitbucket Pipelines - SonarQube Cloud](https://docs.sonarsource.com/sonarqube-cloud/advanced-setup/ci-based-analysis/bitbucket-pipelines-for-sonarcloud/)
 
+
 ## Important Information in Pipelines 
 - The pipeline is configured to run only under the following conditions:  
   - When the branch is `main`.  
