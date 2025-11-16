@@ -16,7 +16,6 @@ PLEASE READ OUR SONARQUBE DOCUMENTATION FOR WORKING WITH BITBUCKET PIPELINES
 - The `SONAR_TOKEN` and `SONAR_HOST_URL` variables are defined in the **Repository Variables** section in Bitbucket. 
 - For more information on how to limit your analysis scope and parameters available, please check **SonarScanner Analysis Scope** and **SonarScanner Analysis Parameters** in the Important Links section.
 
-
 ## Important Links 
 [Bitbucket Cloud - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-cloud-integration/)  
 [Bitbucket Server and Bitbucket Data Center - SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/bitbucket-server-integration/)  
